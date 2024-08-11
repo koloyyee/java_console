@@ -1,6 +1,6 @@
 # java_console
 
-A random collection of CLI or console app aim to learn Math and test or different ideas.
+A random collection of CLI or console app aim to learn Math and testing different ideas.
 
 These files are running in [JBang](https://www.jbang.dev), wonderful "scripting" toolkit for Java.
 
