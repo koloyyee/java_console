@@ -11,15 +11,16 @@ public class Entropy {
 
     List<Double> input = Arrays.stream(args).mapToDouble(Double::parseDouble).boxed().toList();
     Entropy e = new Entropy();
-   System.out.println(e.pp(input))    ;
-   System.out.println(e.fp(input))    ;
+    System.out.println(e.pp(input));
+    System.out.println(e.fp(input));
   }
 
   public double fp(List<Double> input) {
-    return input.stream()
+    return input
+        .stream()
         .collect(
-            Collectors.summingDouble(el -> -(el * (Math.log(el) / Math.log(2))))); // log base 2
-
+            Collectors.summingDouble(
+                el -> -(el * (Math.log(el) / Math.log(2))))); // log base 2
   }
 
   public double pp(List<Double> input) {

@@ -21,12 +21,13 @@ public class EuclideanDistance {
   public static double euclidean(String... args) {
     // d(p,q) = Math.sqrt(sum( (pi - qi) ^ 2 ));
     double sum = 0;
-    for (int i = 0; i < args.length; i += 4) { // goes by a 2 pairs 
+    for (int i = 0; i < args.length; i++) { // error here
       double px = Double.parseDouble(args[0]);
       double py = Double.parseDouble(args[1]);
 
       double qx = Double.parseDouble(args[2]);
       double qy = Double.parseDouble(args[3]);
+
       sum = Math.pow(px - qx, 2) + Math.pow(py - qy, 2);
     }
     var result = Math.sqrt(sum);
